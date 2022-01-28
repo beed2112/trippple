@@ -1,4 +1,4 @@
-do_connect: Connection to trippple.hc failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
+do_connect: Connection to 192.168.3.20 failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
 Anonymous login successful
 
 	Sharename       Type      Comment
