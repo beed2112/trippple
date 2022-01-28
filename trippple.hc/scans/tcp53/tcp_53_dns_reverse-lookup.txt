@@ -1,0 +1,21 @@
+
+; <<>> DiG 9.17.21-1-Debian <<>> -p 53 -x trippple.hc @trippple.hc
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 41947
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4000
+; COOKIE: 596d4e063ab131d6 (echoed)
+;; QUESTION SECTION:
+;hc.trippple.in-addr.arpa.	IN	PTR
+
+;; AUTHORITY SECTION:
+in-addr.arpa.		899	IN	SOA	b.in-addr-servers.arpa. nstld.iana.org. 2021111819 1800 900 604800 3600
+
+;; Query time: 87 msec
+;; SERVER: 192.168.3.20#53(trippple.hc) (UDP)
+;; WHEN: Fri Jan 21 16:34:06 MST 2022
+;; MSG SIZE  rcvd: 133
+

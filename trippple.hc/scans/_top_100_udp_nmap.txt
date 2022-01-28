@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Fri Jan 21 16:25:04 2022 as: nmap -vv --reason -Pn -T4 -sU -A --top-ports 100 -oN /home/beed2112/hackclub/results/results/trippple.hc/scans/_top_100_udp_nmap.txt -oX /home/beed2112/hackclub/results/results/trippple.hc/scans/xml/_top_100_udp_nmap.xml trippple.hc

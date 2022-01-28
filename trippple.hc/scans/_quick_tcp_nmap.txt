@@ -1,0 +1,127 @@
+# Nmap 7.92 scan initiated Fri Jan 21 16:25:04 2022 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/beed2112/hackclub/results/results/trippple.hc/scans/_quick_tcp_nmap.txt -oX /home/beed2112/hackclub/results/results/trippple.hc/scans/xml/_quick_tcp_nmap.xml trippple.hc
+Nmap scan report for trippple.hc (192.168.3.20)
+Host is up, received user-set (0.057s latency).
+Scanned at 2022-01-21 16:25:04 MST for 542s
+Not shown: 988 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON          VERSION
+53/tcp   open  domain?       syn-ack ttl 127
+88/tcp   open  kerberos-sec  syn-ack ttl 127 Microsoft Windows Kerberos (server time: 2022-01-21 23:22:58Z)
+135/tcp  open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+389/tcp  open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: tripppled.local, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds  syn-ack ttl 127 Windows Server 2016 Standard 14393 microsoft-ds (workgroup: TRIPPPLED)
+464/tcp  open  kpasswd5?     syn-ack ttl 127
+593/tcp  open  ncacn_http    syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped    syn-ack ttl 127
+3268/tcp open  ldap          syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: tripppled.local, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped    syn-ack ttl 127
+3389/tcp open  ms-wbt-server syn-ack ttl 127 Microsoft Terminal Services
+| ssl-cert: Subject: commonName=trippple.tripppled.local
+| Issuer: commonName=trippple.tripppled.local
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-09-18T03:21:27
+| Not valid after:  2022-03-20T03:21:27
+| MD5:   ec15 7243 503e eee6 27b0 5a62 4c45 7a60
+| SHA-1: 4bae 4df9 1cf7 d366 1886 add6 82e1 645b 44cb a6d6
+| -----BEGIN CERTIFICATE-----
+| MIIC9DCCAdygAwIBAgIQdTeBLOgkZJRDysIp9DxCBzANBgkqhkiG9w0BAQsFADAj
+| MSEwHwYDVQQDExh0cmlwcHBsZS50cmlwcHBsZWQubG9jYWwwHhcNMjEwOTE4MDMy
+| MTI3WhcNMjIwMzIwMDMyMTI3WjAjMSEwHwYDVQQDExh0cmlwcHBsZS50cmlwcHBs
+| ZWQubG9jYWwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCNSnZgbZPE
+| 9FunvvVjkK15tWnINOOCVhXb5XgZx+pqG58TGeg1chI/IzOE124tatGrjPZkv5mR
+| Ehb6Kl11ada9UFec3T+eVIsiLKlHzgb9/lcuX8OOWLlRzedahs8exK1QvHy+HEF7
+| /Xx53Cw04bjC4skGZhYY3VZ6ehKZkLwYThn89tez4rk+YJ7Ugf7xmiRFAzzJMleO
+| MolkWE1eibCWsttLduaf17RxypiO1bNbnhdO9WoFmSzQy9Tvdpuifuxbgwfqe37k
+| +JDr8MHn1aojaJM5YdjiRJ2NGYd80bT4v9An7l6cgMiLSJhz1P7L2uOhDuAPFagV
+| K8hiI1YHACdZAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQE
+| AwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAF9gJsb6L881/+6I1Vx/MQleYxKqjHtkh
+| okUF9PjKmBuNACcG+vXl5wIZnbfgL7dMCsEXpKEmY/+ESa6iCG1rxzyCmMQtfxc4
+| PywzObI1+UNYCXbQvBgosAEDBIL81cLz0n7N/7k7Ev6UWSzHGmJJc38UB5G8vZd+
+| STOCOFEyF+KB3ofJKHpaS8dRNv9aPwbaSFAAhgI3IjU6eFuEmdC9Ru0aYqREXgzu
+| GauU9SocFZ4U5OoYwVI/A7mswzm8JYTgUF7uHnlA4y0RZSZRXcSZMD23v24Bcjcg
+| Kq3/9x0jxXWVQBMlXc44b92PsslxZnvjuOawsAkfAH7ZUcnNAGoVew==
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: TRIPPPLED
+|   NetBIOS_Domain_Name: TRIPPPLED
+|   NetBIOS_Computer_Name: TRIPPPLE
+|   DNS_Domain_Name: tripppled.local
+|   DNS_Computer_Name: trippple.tripppled.local
+|   DNS_Tree_Name: tripppled.local
+|   Product_Version: 10.0.14393
+|_  System_Time: 2022-01-21T23:31:07+00:00
+|_ssl-date: 2022-01-21T23:31:47+00:00; -2m17s from scanner time.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2012|2016|2008|10|7 (93%)
+OS CPE: cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_8 cpe:/o:microsoft:windows_10:1607 cpe:/o:microsoft:windows_7
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows Server 2012 R2 (93%), Microsoft Windows Server 2016 (91%), Microsoft Windows Server 2008 R2 (87%), Microsoft Windows Server 2008 R2 SP1 or Windows 8 (87%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (85%), Microsoft Windows 10 1607 (85%), Microsoft Windows 7 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.92%E=4%D=1/21%OT=53%CT=%CU=%PV=Y%G=N%TM=61EB42EE%P=x86_64-pc-linux-gnu)
+SEQ(SP=107%GCD=1%ISR=10A%TI=I%II=I%SS=S%TS=A)
+OPS(O1=M564NW8ST11%O2=M564NW8ST11%O3=M564NW8NNT11%O4=M564NW8ST11%O5=M564NW8ST11%O6=M564ST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%TG=80%W=2000%O=M564NW8NNS%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Uptime guess: 26.158 days (since Sun Dec 26 12:46:13 2021)
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Host: TRIPPPLE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_clock-skew: mean: 1h33m42s, deviation: 3h34m39s, median: -2m17s
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: trippple
+|   NetBIOS computer name: TRIPPPLE\x00
+|   Domain name: tripppled.local
+|   Forest name: tripppled.local
+|   FQDN: trippple.tripppled.local
+|_  System time: 2022-01-21T15:31:07-08:00
+| nbstat: NetBIOS name: TRIPPPLE, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:a5:77:2c (VMware)
+| Names:
+|   TRIPPPLE<00>         Flags: <unique><active>
+|   TRIPPPLED<00>        Flags: <group><active>
+|   TRIPPPLED<1c>        Flags: <group><active>
+|   TRIPPPLE<20>         Flags: <unique><active>
+|   TRIPPPLED<1b>        Flags: <unique><active>
+| Statistics:
+|   00 50 56 a5 77 2c 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| smb2-time: 
+|   date: 2022-01-21T23:31:07
+|_  start_date: 2020-11-24T03:19:58
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 32040/tcp): CLEAN (Timeout)
+|   Check 2 (port 45381/tcp): CLEAN (Timeout)
+|   Check 3 (port 56608/udp): CLEAN (Timeout)
+|   Check 4 (port 33947/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   57.49 ms trippple.hc (192.168.3.20)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 21 16:34:06 2022 -- 1 IP address (1 host up) scanned in 542.41 seconds

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat Jan 22 16:57:31 2022 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 445 -&#45;script=smb-vuln* -d -&#45;script-args=unsafe=1 -oN /home/beed2112/hackclub/results/trippple.hc/scans/tcp445/tcp_445_smb_ms06-025.txt -oX /home/beed2112/hackclub/results/trippple.hc/scans/tcp445/xml/tcp_445_smb_ms06-025.xml trippple.hc -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 445 -&#45;script=smb-vuln* -d -&#45;script-args=unsafe=1 -oN /home/beed2112/hackclub/results/trippple.hc/scans/tcp445/tcp_445_smb_ms06-025.txt -oX /home/beed2112/hackclub/results/trippple.hc/scans/tcp445/xml/tcp_445_smb_ms06-025.xml trippple.hc" start="1642895851" startstr="Sat Jan 22 16:57:31 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="3"/>
+<debugging level="1"/>
+<taskbegin task="NSE" time="1642895851"/>
+<taskend task="NSE" time="1642895851"/>
+<taskbegin task="NSE" time="1642895851"/>
+<taskend task="NSE" time="1642895851"/>
+<taskbegin task="SYN Stealth Scan" time="1642895851"/>
+<taskend task="SYN Stealth Scan" time="1642895851" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1642895851"/>
+<taskend task="Service scan" time="1642895857" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1642895857"/>
+<taskend task="NSE" time="1642895863"/>
+<taskbegin task="NSE" time="1642895863"/>
+<taskend task="NSE" time="1642895863"/>
+<host starttime="1642895851" endtime="1642895863"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.3.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="trippple.hc" type="user"/>
+<hostname name="trippple.hc" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Microsoft Windows Server 2008 R2 - 2012 microsoft-ds" extrainfo="workgroup: TRIPPPLED" hostname="TRIPPPLE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-061" output="NT_STATUS_ACCESS_DENIED">false</script><script id="smb-vuln-cve-2017-7494" output="&#xa;  ERROR: Either versioning failed or samba does not exist on the port!&#xa;"/></hostscript><times srtt="57711" rttvar="57711" to="288555"/>
+</host>
+<taskbegin task="NSE" time="1642895863"/>
+<taskend task="NSE" time="1642895863"/>
+<taskbegin task="NSE" time="1642895863"/>
+<taskend task="NSE" time="1642895863"/>
+<runstats><finished time="1642895863" timestr="Sat Jan 22 16:57:43 2022" summary="Nmap done at Sat Jan 22 16:57:43 2022; 1 IP address (1 host up) scanned in 11.79 seconds" elapsed="11.79" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

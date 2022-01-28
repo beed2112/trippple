@@ -1,0 +1,91 @@
+# Nmap 7.92 scan initiated Fri Jan 21 16:34:06 2022 as: nmap -vv --reason -Pn -T4 -sV -p 445 "--script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp445/xml/tcp_445_smb_nmap.xml trippple.hc
+Nmap scan report for trippple.hc (192.168.3.20)
+Host is up, received user-set (0.057s latency).
+Scanned at 2022-01-21 16:34:07 MST for 63s
+
+PORT    STATE SERVICE      REASON          VERSION
+445/tcp open  microsoft-ds syn-ack ttl 127 Windows Server 2016 Standard 14393 microsoft-ds (workgroup: TRIPPPLED)
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+Service Info: Host: TRIPPPLE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: trippple
+|   NetBIOS computer name: TRIPPPLE\x00
+|   Domain name: tripppled.local
+|   Forest name: tripppled.local
+|   FQDN: trippple.tripppled.local
+|_  System time: 2022-01-21T15:31:58-08:00
+| smb-mbenum: 
+|_  ERROR: Call to Browser Service failed with status = 2184
+|_smb-print-text: false
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: <blank>
+|   \\192.168.3.20\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\192.168.3.20\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\192.168.3.20\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: READ
+|   \\192.168.3.20\NETLOGON: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: <none>
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: required
+| nbstat: NetBIOS name: TRIPPPLE, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:a5:77:2c (VMware)
+| Names:
+|   TRIPPPLE<00>         Flags: <unique><active>
+|   TRIPPPLED<00>        Flags: <group><active>
+|   TRIPPPLED<1c>        Flags: <group><active>
+|   TRIPPPLE<20>         Flags: <unique><active>
+|   TRIPPPLED<1b>        Flags: <unique><active>
+| Statistics:
+|   00 50 56 a5 77 2c 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2022-01-21T23:31:57
+|_  start_date: 2020-11-24T03:19:58
+| smb2-capabilities: 
+|   2.0.2: 
+|     Distributed File System
+|   2.1: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.0: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.0.2: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   3.1.1: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.0.2
+|     2.1
+|     3.0
+|     3.0.2
+|_    3.1.1
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 21 16:35:10 2022 -- 1 IP address (1 host up) scanned in 63.39 seconds

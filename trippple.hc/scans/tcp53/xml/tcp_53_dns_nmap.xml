@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Fri Jan 21 16:34:06 2022 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp53/tcp_53_dns_nmap.txt -oX /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp53/xml/tcp_53_dns_nmap.xml trippple.hc -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 53 &quot;-&#45;script=banner,(dns* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp53/tcp_53_dns_nmap.txt -oX /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp53/xml/tcp_53_dns_nmap.xml trippple.hc" start="1642808046" startstr="Fri Jan 21 16:34:06 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="53"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1642808046"/>
+<taskend task="NSE" time="1642808046"/>
+<taskbegin task="NSE" time="1642808046"/>
+<taskend task="NSE" time="1642808046"/>
+<taskbegin task="NSE" time="1642808046"/>
+<taskend task="NSE" time="1642808046"/>
+<taskbegin task="SYN Stealth Scan" time="1642808046"/>
+<taskend task="SYN Stealth Scan" time="1642808047" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1642808047"/>
+<taskend task="Service scan" time="1642808190" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1642808190"/>
+<taskend task="NSE" time="1642808205"/>
+<taskbegin task="NSE" time="1642808205"/>
+<taskend task="NSE" time="1642808206"/>
+<taskbegin task="NSE" time="1642808206"/>
+<taskend task="NSE" time="1642808206"/>
+<host starttime="1642808047" endtime="1642808206"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.3.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="trippple.hc" type="user"/>
+<hostname name="trippple.hc" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" method="table" conf="3"/><script id="dns-nsec3-enum" output="&#xa;  DNSSEC NSEC3 not supported&#xa;"/></port>
+</ports>
+<hostscript><script id="dns-brute" output="&#xa;  DNS Brute-force hostnames: No results."><table key="DNS Brute-force hostnames">
+</table>
+</script></hostscript><times srtt="56326" rttvar="56326" to="281630"/>
+</host>
+<taskbegin task="NSE" time="1642808206"/>
+<taskend task="NSE" time="1642808206"/>
+<taskbegin task="NSE" time="1642808206"/>
+<taskend task="NSE" time="1642808206"/>
+<taskbegin task="NSE" time="1642808206"/>
+<taskend task="NSE" time="1642808206"/>
+<runstats><finished time="1642808206" timestr="Fri Jan 21 16:36:46 2022" summary="Nmap done at Fri Jan 21 16:36:46 2022; 1 IP address (1 host up) scanned in 159.77 seconds" elapsed="159.77" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

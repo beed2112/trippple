@@ -1,0 +1,385 @@
+# Nmap 7.92 scan initiated Fri Jan 21 16:34:06 2022 as: nmap -vv --reason -Pn -T4 -sV -p 3268 "--script=banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp3268/tcp_3268_ldap_nmap.txt -oX /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp3268/xml/tcp_3268_ldap_nmap.xml trippple.hc
+Nmap scan report for trippple.hc (192.168.3.20)
+Host is up, received user-set (0.057s latency).
+Scanned at 2022-01-21 16:34:07 MST for 16s
+
+PORT     STATE SERVICE REASON          VERSION
+3268/tcp open  ldap    syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: tripppled.local, Site: Default-First-Site-Name)
+| ldap-rootdse: 
+| LDAP Results
+|   <ROOT>
+|       currentTime: 20220121233157.0Z
+|       subschemaSubentry: CN=Aggregate,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|       dsServiceName: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|       namingContexts: DC=tripppled,DC=local
+|       namingContexts: CN=Configuration,DC=tripppled,DC=local
+|       namingContexts: CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|       namingContexts: DC=DomainDnsZones,DC=tripppled,DC=local
+|       namingContexts: DC=ForestDnsZones,DC=tripppled,DC=local
+|       defaultNamingContext: DC=tripppled,DC=local
+|       schemaNamingContext: CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|       configurationNamingContext: CN=Configuration,DC=tripppled,DC=local
+|       rootDomainNamingContext: DC=tripppled,DC=local
+|       supportedControl: 1.2.840.113556.1.4.319
+|       supportedControl: 1.2.840.113556.1.4.801
+|       supportedControl: 1.2.840.113556.1.4.473
+|       supportedControl: 1.2.840.113556.1.4.528
+|       supportedControl: 1.2.840.113556.1.4.417
+|       supportedControl: 1.2.840.113556.1.4.619
+|       supportedControl: 1.2.840.113556.1.4.841
+|       supportedControl: 1.2.840.113556.1.4.529
+|       supportedControl: 1.2.840.113556.1.4.805
+|       supportedControl: 1.2.840.113556.1.4.521
+|       supportedControl: 1.2.840.113556.1.4.970
+|       supportedControl: 1.2.840.113556.1.4.1338
+|       supportedControl: 1.2.840.113556.1.4.474
+|       supportedControl: 1.2.840.113556.1.4.1339
+|       supportedControl: 1.2.840.113556.1.4.1340
+|       supportedControl: 1.2.840.113556.1.4.1413
+|       supportedControl: 2.16.840.1.113730.3.4.9
+|       supportedControl: 2.16.840.1.113730.3.4.10
+|       supportedControl: 1.2.840.113556.1.4.1504
+|       supportedControl: 1.2.840.113556.1.4.1852
+|       supportedControl: 1.2.840.113556.1.4.802
+|       supportedControl: 1.2.840.113556.1.4.1907
+|       supportedControl: 1.2.840.113556.1.4.1948
+|       supportedControl: 1.2.840.113556.1.4.1974
+|       supportedControl: 1.2.840.113556.1.4.1341
+|       supportedControl: 1.2.840.113556.1.4.2026
+|       supportedControl: 1.2.840.113556.1.4.2064
+|       supportedControl: 1.2.840.113556.1.4.2065
+|       supportedControl: 1.2.840.113556.1.4.2066
+|       supportedControl: 1.2.840.113556.1.4.2090
+|       supportedControl: 1.2.840.113556.1.4.2205
+|       supportedControl: 1.2.840.113556.1.4.2204
+|       supportedControl: 1.2.840.113556.1.4.2206
+|       supportedControl: 1.2.840.113556.1.4.2211
+|       supportedControl: 1.2.840.113556.1.4.2239
+|       supportedControl: 1.2.840.113556.1.4.2255
+|       supportedControl: 1.2.840.113556.1.4.2256
+|       supportedControl: 1.2.840.113556.1.4.2309
+|       supportedLDAPVersion: 3
+|       supportedLDAPVersion: 2
+|       supportedLDAPPolicies: MaxPoolThreads
+|       supportedLDAPPolicies: MaxPercentDirSyncRequests
+|       supportedLDAPPolicies: MaxDatagramRecv
+|       supportedLDAPPolicies: MaxReceiveBuffer
+|       supportedLDAPPolicies: InitRecvTimeout
+|       supportedLDAPPolicies: MaxConnections
+|       supportedLDAPPolicies: MaxConnIdleTime
+|       supportedLDAPPolicies: MaxPageSize
+|       supportedLDAPPolicies: MaxBatchReturnMessages
+|       supportedLDAPPolicies: MaxQueryDuration
+|       supportedLDAPPolicies: MaxDirSyncDuration
+|       supportedLDAPPolicies: MaxTempTableSize
+|       supportedLDAPPolicies: MaxResultSetSize
+|       supportedLDAPPolicies: MinResultSets
+|       supportedLDAPPolicies: MaxResultSetsPerConn
+|       supportedLDAPPolicies: MaxNotificationPerConn
+|       supportedLDAPPolicies: MaxValRange
+|       supportedLDAPPolicies: MaxValRangeTransitive
+|       supportedLDAPPolicies: ThreadMemoryLimit
+|       supportedLDAPPolicies: SystemMemoryLimitPercent
+|       highestCommittedUSN: 749001
+|       supportedSASLMechanisms: GSSAPI
+|       supportedSASLMechanisms: GSS-SPNEGO
+|       supportedSASLMechanisms: EXTERNAL
+|       supportedSASLMechanisms: DIGEST-MD5
+|       dnsHostName: trippple.tripppled.local
+|       ldapServiceName: tripppled.local:trippple$@TRIPPPLED.LOCAL
+|       serverName: CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|       supportedCapabilities: 1.2.840.113556.1.4.800
+|       supportedCapabilities: 1.2.840.113556.1.4.1670
+|       supportedCapabilities: 1.2.840.113556.1.4.1791
+|       supportedCapabilities: 1.2.840.113556.1.4.1935
+|       supportedCapabilities: 1.2.840.113556.1.4.2080
+|       supportedCapabilities: 1.2.840.113556.1.4.2237
+|       isSynchronized: TRUE
+|       isGlobalCatalogReady: TRUE
+|       domainFunctionality: 7
+|       forestFunctionality: 7
+|_      domainControllerFunctionality: 7
+| ldap-search: 
+|   Context: DC=tripppled,DC=local
+|     dn: DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: domain
+|         objectClass: domainDNS
+|         distinguishedName: DC=tripppled,DC=local
+|         instanceType: 5
+|         whenCreated: 2020/11/20 20:43:11 UTC
+|         whenChanged: 2020/11/24 04:15:40 UTC
+|         subRefs: DC=ForestDnsZones,DC=tripppled,DC=local
+|         subRefs: DC=DomainDnsZones,DC=tripppled,DC=local
+|         subRefs: CN=Configuration,DC=tripppled,DC=local
+|         uSNCreated: 4099
+|         uSNChanged: 16483
+|         name: tripppled
+|         objectGUID: 2d643645-df9f-474a-b626-5b37b039f6c
+|         objectSid: 1-5-21-311852629-3748825563-2550248034
+|         wellKnownObjects: B:32:6227F0AF1FC2410D8E3BB10615BB5B0F:CN=NTDS Quotas,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:F4BE92A4C777485E878E9421D53087DB:CN=Microsoft,CN=Program Data,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:09460C08AE1E4A4EA0F64AEE7DAA1E5A:CN=Program Data,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:22B70C67D56E4EFB91E9300FCA3DC1AA:CN=ForeignSecurityPrincipals,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:18E2EA80684F11D2B9AA00C04F79F805:CN=Deleted Objects,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:2FBAC1870ADE11D297C400C04FD8D5CD:CN=Infrastructure,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:AB8153B7768811D1ADED00C04FD8D5CD:CN=LostAndFound,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:AB1D30F3768811D1ADED00C04FD8D5CD:CN=System,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:A361B2FFFFD211D1AA4B00C04FD7D83A:OU=Domain Controllers,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:AA312825768811D1ADED00C04FD8D5CD:CN=Computers,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:A9D1CA15768811D1ADED00C04FD8D5CD:CN=Users,DC=tripppled,DC=local
+|         objectCategory: CN=Domain-DNS,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         gPLink: [LDAP://CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=tripppled,DC=local;0]
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|         masteredBy: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|         msDs-masteredBy: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|         msDS-IsDomainFor: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|         dc: tripppled
+|     dn: CN=Configuration,DC=tripppled,DC=local
+|     dn: CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|     dn: CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: Operations
+|         distinguishedName: CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5752
+|         uSNChanged: 5752
+|         name: Operations
+|         objectGUID: 311a66f-f9ab-5d4f-83fc-fe87b7049f2
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=3467dae5-dedd-4648-9066-f48ac186b20a,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 3467dae5-dedd-4648-9066-f48ac186b20a
+|         distinguishedName: CN=3467dae5-dedd-4648-9066-f48ac186b20a,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5753
+|         uSNChanged: 5753
+|         name: 3467dae5-dedd-4648-9066-f48ac186b20a
+|         objectGUID: 20c21431-484b-e948-b4b9-ae3264bd10b6
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=33b7ee33-1386-47cf-baa1-b03e06473253,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 33b7ee33-1386-47cf-baa1-b03e06473253
+|         distinguishedName: CN=33b7ee33-1386-47cf-baa1-b03e06473253,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5754
+|         uSNChanged: 5754
+|         name: 33b7ee33-1386-47cf-baa1-b03e06473253
+|         objectGUID: 7c33bff6-3540-7a44-bf9c-c29d39bac96e
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=e9ee8d55-c2fb-4723-a333-c80ff4dfbf45,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: e9ee8d55-c2fb-4723-a333-c80ff4dfbf45
+|         distinguishedName: CN=e9ee8d55-c2fb-4723-a333-c80ff4dfbf45,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5755
+|         uSNChanged: 5755
+|         name: e9ee8d55-c2fb-4723-a333-c80ff4dfbf45
+|         objectGUID: d081fe90-24dc-6341-8dfb-5b1062f7fccd
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=ccfae63a-7fb5-454c-83ab-0e8e1214974e,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: ccfae63a-7fb5-454c-83ab-0e8e1214974e
+|         distinguishedName: CN=ccfae63a-7fb5-454c-83ab-0e8e1214974e,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5756
+|         uSNChanged: 5756
+|         name: ccfae63a-7fb5-454c-83ab-0e8e1214974e
+|         objectGUID: 1fd04def-cf31-2d4a-90c9-9dad5786966
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=ad3c7909-b154-4c16-8bf7-2c3a7870bb3d,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: ad3c7909-b154-4c16-8bf7-2c3a7870bb3d
+|         distinguishedName: CN=ad3c7909-b154-4c16-8bf7-2c3a7870bb3d,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5757
+|         uSNChanged: 5757
+|         name: ad3c7909-b154-4c16-8bf7-2c3a7870bb3d
+|         objectGUID: 68c8a3c3-22f8-da41-a88b-ae3cd22f7c2
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=26ad2ebf-f8f5-44a4-b97c-a616c8b9d09a,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 26ad2ebf-f8f5-44a4-b97c-a616c8b9d09a
+|         distinguishedName: CN=26ad2ebf-f8f5-44a4-b97c-a616c8b9d09a,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5758
+|         uSNChanged: 5758
+|         name: 26ad2ebf-f8f5-44a4-b97c-a616c8b9d09a
+|         objectGUID: 86e4721e-d716-7844-aac3-c45a83b5bf21
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=4444c516-f43a-4c12-9c4b-b5c064941d61,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 4444c516-f43a-4c12-9c4b-b5c064941d61
+|         distinguishedName: CN=4444c516-f43a-4c12-9c4b-b5c064941d61,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5759
+|         uSNChanged: 5759
+|         name: 4444c516-f43a-4c12-9c4b-b5c064941d61
+|         objectGUID: a326d21-e1fd-a844-bdc7-863fb4643052
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=436a1a4b-f41a-46e6-ac86-427720ef29f3,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 436a1a4b-f41a-46e6-ac86-427720ef29f3
+|         distinguishedName: CN=436a1a4b-f41a-46e6-ac86-427720ef29f3,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5760
+|         uSNChanged: 5760
+|         name: 436a1a4b-f41a-46e6-ac86-427720ef29f3
+|         objectGUID: b31511b4-22cf-6941-989e-ac13d1e5703
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=b2b7fb45-f50d-41bc-a73b-8f580f3b636a,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: b2b7fb45-f50d-41bc-a73b-8f580f3b636a
+|         distinguishedName: CN=b2b7fb45-f50d-41bc-a73b-8f580f3b636a,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5761
+|         uSNChanged: 5761
+|         name: b2b7fb45-f50d-41bc-a73b-8f580f3b636a
+|         objectGUID: e4989574-d3cc-4248-bc6-851fddcc9fcf
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=1bdf6366-c3db-4d0b-b8cb-f99ba9bce20f,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 1bdf6366-c3db-4d0b-b8cb-f99ba9bce20f
+|         distinguishedName: CN=1bdf6366-c3db-4d0b-b8cb-f99ba9bce20f,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5762
+|         uSNChanged: 5762
+|         name: 1bdf6366-c3db-4d0b-b8cb-f99ba9bce20f
+|         objectGUID: d258e3e8-7e18-943-b612-bd2ba5d75b56
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=63c0f51a-067c-4640-8a4f-044fb33f1049,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 63c0f51a-067c-4640-8a4f-044fb33f1049
+|         distinguishedName: CN=63c0f51a-067c-4640-8a4f-044fb33f1049,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5763
+|         uSNChanged: 5763
+|         name: 63c0f51a-067c-4640-8a4f-044fb33f1049
+|         objectGUID: b417859-5ba4-f343-ac3f-415ac9c4c3c4
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=dae441c0-366e-482e-98d9-60a99a1898cc,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: dae441c0-366e-482e-98d9-60a99a1898cc
+|         distinguishedName: CN=dae441c0-366e-482e-98d9-60a99a1898cc,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5764
+|         uSNChanged: 5764
+|         name: dae441c0-366e-482e-98d9-60a99a1898cc
+|         objectGUID: 85aa1538-750-b942-826b-fd18464627e5
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=7dd09ca6-f0d6-43bf-b7f8-ef348f435617,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 7dd09ca6-f0d6-43bf-b7f8-ef348f435617
+|         distinguishedName: CN=7dd09ca6-f0d6-43bf-b7f8-ef348f435617,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5765
+|         uSNChanged: 5765
+|         name: 7dd09ca6-f0d6-43bf-b7f8-ef348f435617
+|         objectGUID: 6a998cde-22e2-8a44-9fa1-22562a833a25
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=6b800a81-affe-4a15-8e41-6ea0c7aa89e4,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: 6b800a81-affe-4a15-8e41-6ea0c7aa89e4
+|         distinguishedName: CN=6b800a81-affe-4a15-8e41-6ea0c7aa89e4,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5766
+|         uSNChanged: 5766
+|         name: 6b800a81-affe-4a15-8e41-6ea0c7aa89e4
+|         objectGUID: c6b120d1-19f6-2942-b2b6-6af38f0eba5
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=dd07182c-3174-4c95-902a-d64fee285bbf,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: dd07182c-3174-4c95-902a-d64fee285bbf
+|         distinguishedName: CN=dd07182c-3174-4c95-902a-d64fee285bbf,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5767
+|         uSNChanged: 5767
+|         name: dd07182c-3174-4c95-902a-d64fee285bbf
+|         objectGUID: 6adfb51d-d9e0-5748-b551-ee8d674c665
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|     dn: CN=ffa5ee3c-1405-476d-b344-7ad37d69cc25,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: container
+|         cn: ffa5ee3c-1405-476d-b344-7ad37d69cc25
+|         distinguishedName: CN=ffa5ee3c-1405-476d-b344-7ad37d69cc25,CN=Operations,CN=ForestUpdates,CN=Configuration,DC=tripppled,DC=local
+|         instanceType: 4
+|         whenCreated: 2020/11/20 20:43:18 UTC
+|         whenChanged: 2020/11/20 20:43:18 UTC
+|         uSNCreated: 5768
+|         uSNChanged: 5768
+|         name: ffa5ee3c-1405-476d-b344-7ad37d69cc25
+|         objectGUID: 26907085-8e1-8543-a224-1fdb4b5fbae3
+|         objectCategory: CN=Container,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+| 
+| 
+|_Result limited to 20 objects (see ldap.maxobjects)
+Service Info: Host: TRIPPPLE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 21 16:34:23 2022 -- 1 IP address (1 host up) scanned in 17.22 seconds

@@ -1,0 +1,25 @@
+
+; <<>> DiG 9.17.21-1-Debian <<>> AXFR -p 53 @trippple.hc
+; (1 server found)
+;; global options: +cmd
+.			57728	IN	NS	b.root-servers.net.
+.			57728	IN	NS	c.root-servers.net.
+.			57728	IN	NS	d.root-servers.net.
+.			57728	IN	NS	e.root-servers.net.
+.			57728	IN	NS	f.root-servers.net.
+.			57728	IN	NS	g.root-servers.net.
+.			57728	IN	NS	h.root-servers.net.
+.			57728	IN	NS	i.root-servers.net.
+.			57728	IN	NS	j.root-servers.net.
+.			57728	IN	NS	k.root-servers.net.
+.			57728	IN	NS	l.root-servers.net.
+.			57728	IN	NS	m.root-servers.net.
+.			57728	IN	NS	a.root-servers.net.
+b.root-servers.net.	83039	IN	A	199.9.14.201
+a.root-servers.net.	81488	IN	A	198.41.0.4
+;; Query time: 59 msec
+;; SERVER: 192.168.3.20#53(trippple.hc) (UDP)
+;; WHEN: Fri Jan 21 16:34:07 MST 2022
+;; MSG SIZE  rcvd: 296
+
+

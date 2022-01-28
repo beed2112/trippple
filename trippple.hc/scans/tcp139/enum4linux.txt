@@ -1,0 +1,128 @@
+Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Fri Jan 21 16:34:06 2022
+
+ ==========================
+|    Target Information    |
+ ==========================
+Target ........... trippple.hc
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+ ===================================================
+|    Enumerating Workgroup/Domain on trippple.hc    |
+ ===================================================
+[+] Got domain/workgroup name: TRIPPPLED
+
+ ===========================================
+|    Nbtstat Information for trippple.hc    |
+ ===========================================
+Looking up status of 192.168.3.20
+	TRIPPPLE        <00> -         B <ACTIVE>  Workstation Service
+	TRIPPPLED       <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+	TRIPPPLED       <1c> - <GROUP> B <ACTIVE>  Domain Controllers
+	TRIPPPLE        <20> -         B <ACTIVE>  File Server Service
+	TRIPPPLED       <1b> -         B <ACTIVE>  Domain Master Browser
+
+	MAC Address = 00-50-56-A5-77-2C
+
+ ====================================
+|    Session Check on trippple.hc    |
+ ====================================
+[+] Server trippple.hc allows sessions using username '', password ''
+
+ ====================================================
+|    Getting information via LDAP for trippple.hc    |
+ ====================================================
+[+] Long domain name for trippple.hc: tripppled.local
+[+] trippple.hc appears to be a root/parent DC
+
+ ==========================================
+|    Getting domain SID for trippple.hc    |
+ ==========================================
+Could not initialise lsarpc. Error was NT_STATUS_ACCESS_DENIED
+[+] Can't determine if host is part of domain or part of a workgroup
+
+ =====================================
+|    OS information on trippple.hc    |
+ =====================================
+Use of uninitialized value $os_info in concatenation (.) or string at ./enum4linux.pl line 464.
+[+] Got OS info for trippple.hc from smbclient:
+[+] Got OS info for trippple.hc from srvinfo:
+Could not initialise srvsvc. Error was NT_STATUS_ACCESS_DENIED
+
+ ============================
+|    Users on trippple.hc    |
+ ============================
+[E] Couldn't find users using querydispinfo: NT_STATUS_ACCESS_DENIED
+
+[E] Couldn't find users using enumdomusers: NT_STATUS_ACCESS_DENIED
+
+ ==========================================
+|    Machine Enumeration on trippple.hc    |
+ ==========================================
+[E] Internal error.  Not implmented in this version of enum4linux.
+
+ ========================================
+|    Share Enumeration on trippple.hc    |
+ ========================================
+do_connect: Connection to trippple.hc failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
+
+	Sharename       Type      Comment
+	---------       ----      -------
+Reconnecting with SMB1 for workgroup listing.
+Unable to connect with SMB1 -- no workgroup available
+
+[+] Attempting to map shares on trippple.hc
+
+ ===================================================
+|    Password Policy Information for trippple.hc    |
+ ===================================================
+[E] Unexpected error from polenum:
+
+
+[+] Attaching to trippple.hc using a NULL share
+
+[+] Trying protocol 139/SMB...
+
+	[!] Protocol failed: Cannot request session (Called Name:TRIPPPLE.HC)
+
+[+] Trying protocol 445/SMB...
+
+	[!] Protocol failed: SAMR SessionError: code: 0xc0000022 - STATUS_ACCESS_DENIED - {Access Denied} A process has requested access to an object but has not been granted those access rights.
+
+
+[E] Failed to get password policy with rpcclient
+
+
+ =============================
+|    Groups on trippple.hc    |
+ =============================
+
+[+] Getting builtin groups:
+
+[+] Getting builtin group memberships:
+
+[+] Getting local groups:
+
+[+] Getting local group memberships:
+
+[+] Getting domain groups:
+
+[+] Getting domain group memberships:
+
+ ======================================================================
+|    Users on trippple.hc via RID cycling (RIDS: 500-550,1000-1050)    |
+ ======================================================================
+[E] Couldn't get SID: NT_STATUS_ACCESS_DENIED.  RID cycling not possible.
+
+ ============================================
+|    Getting printer info for trippple.hc    |
+ ============================================
+Could not initialise spoolss. Error was NT_STATUS_ACCESS_DENIED
+
+
+enum4linux complete on Fri Jan 21 16:34:16 2022
+
+

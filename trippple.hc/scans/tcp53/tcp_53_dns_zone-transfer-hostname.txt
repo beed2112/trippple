@@ -1,0 +1,5 @@
+
+; <<>> DiG 9.17.21-1-Debian <<>> AXFR -p 53 @trippple.hc trippple.hc
+; (1 server found)
+;; global options: +cmd
+; Transfer failed.
