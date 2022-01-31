@@ -1,0 +1,722 @@
+# extended LDIF
+#
+# LDAPv3
+# base <DC=tripppled,DC=local> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# tripppled.local
+dn: DC=tripppled,DC=local
+objectClass: top
+objectClass: domain
+objectClass: domainDNS
+distinguishedName: DC=tripppled,DC=local
+instanceType: 5
+whenCreated: 20201120204311.0Z
+whenChanged: 20201124041540.0Z
+subRefs: DC=ForestDnsZones,DC=tripppled,DC=local
+subRefs: DC=DomainDnsZones,DC=tripppled,DC=local
+subRefs: CN=Configuration,DC=tripppled,DC=local
+uSNCreated: 4099
+dSASignature:: AQAAACgAAAAAAAAAAAAAAAAAAAAAAAAARgS5vSFNbkW9HW8RERdj6Q==
+uSNChanged: 16483
+name: tripppled
+objectGUID:: RTZkLd+fR0q2Jls3sAOfbA==
+creationTime: 132506615879818921
+forceLogoff: -9223372036854775808
+lockoutDuration: -18000000000
+lockOutObservationWindow: -18000000000
+lockoutThreshold: 0
+maxPwdAge: -36288000000000
+minPwdAge: -864000000000
+minPwdLength: 5
+modifiedCountAtLastProm: 0
+nextRid: 1000
+pwdProperties: 0
+pwdHistoryLength: 24
+objectSid:: AQQAAAAAAAUVAAAAVX6WEtuJct9isgGY
+serverState: 1
+uASCompat: 1
+modifiedCount: 1
+auditingPolicy:: AAE=
+nTMixedDomain: 0
+rIDManagerReference: CN=RID Manager$,CN=System,DC=tripppled,DC=local
+fSMORoleOwner: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-N
+ ame,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+systemFlags: -1946157056
+wellKnownObjects: B:32:6227F0AF1FC2410D8E3BB10615BB5B0F:CN=NTDS Quotas,DC=trip
+ ppled,DC=local
+wellKnownObjects: B:32:F4BE92A4C777485E878E9421D53087DB:CN=Microsoft,CN=Progra
+ m Data,DC=tripppled,DC=local
+wellKnownObjects: B:32:09460C08AE1E4A4EA0F64AEE7DAA1E5A:CN=Program Data,DC=tri
+ pppled,DC=local
+wellKnownObjects: B:32:22B70C67D56E4EFB91E9300FCA3DC1AA:CN=ForeignSecurityPrin
+ cipals,DC=tripppled,DC=local
+wellKnownObjects: B:32:18E2EA80684F11D2B9AA00C04F79F805:CN=Deleted Objects,DC=
+ tripppled,DC=local
+wellKnownObjects: B:32:2FBAC1870ADE11D297C400C04FD8D5CD:CN=Infrastructure,DC=t
+ ripppled,DC=local
+wellKnownObjects: B:32:AB8153B7768811D1ADED00C04FD8D5CD:CN=LostAndFound,DC=tri
+ pppled,DC=local
+wellKnownObjects: B:32:AB1D30F3768811D1ADED00C04FD8D5CD:CN=System,DC=tripppled
+ ,DC=local
+wellKnownObjects: B:32:A361B2FFFFD211D1AA4B00C04FD7D83A:OU=Domain Controllers,
+ DC=tripppled,DC=local
+wellKnownObjects: B:32:AA312825768811D1ADED00C04FD8D5CD:CN=Computers,DC=trippp
+ led,DC=local
+wellKnownObjects: B:32:A9D1CA15768811D1ADED00C04FD8D5CD:CN=Users,DC=tripppled,
+ DC=local
+objectCategory: CN=Domain-DNS,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+isCriticalSystemObject: TRUE
+gPLink: [LDAP://CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=Syste
+ m,DC=tripppled,DC=local;0]
+dSCorePropagationData: 16010101000000.0Z
+otherWellKnownObjects: B:32:683A24E2E8164BD3AF86AC3C2CF3F981:CN=Keys,DC=trippp
+ led,DC=local
+otherWellKnownObjects: B:32:1EB93889E40C45DF9F0C64D23BBB6237:CN=Managed Servic
+ e Accounts,DC=tripppled,DC=local
+masteredBy: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name
+ ,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+ms-DS-MachineAccountQuota: 10
+msDS-Behavior-Version: 7
+msDS-PerUserTrustQuota: 1
+msDS-AllUsersTrustQuota: 1000
+msDS-PerUserTrustTombstonesQuota: 10
+msDs-masteredBy: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site
+ -Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+msDS-IsDomainFor: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Sit
+ e-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+msDS-NcType: 0
+msDS-ExpirePasswordsOnSmartCardOnlyAccounts: TRUE
+dc: tripppled
+
+# WinsockServices, System, tripppled.local
+dn: CN=WinsockServices,CN=System,DC=tripppled,DC=local
+
+# RpcServices, System, tripppled.local
+dn: CN=RpcServices,CN=System,DC=tripppled,DC=local
+
+# FileLinks, System, tripppled.local
+dn: CN=FileLinks,CN=System,DC=tripppled,DC=local
+
+# Default Domain Policy, System, tripppled.local
+dn: CN=Default Domain Policy,CN=System,DC=tripppled,DC=local
+
+# Meetings, System, tripppled.local
+dn: CN=Meetings,CN=System,DC=tripppled,DC=local
+
+# Policies, System, tripppled.local
+dn: CN=Policies,CN=System,DC=tripppled,DC=local
+
+# RAS and IAS Servers Access Check, System, tripppled.local
+dn: CN=RAS and IAS Servers Access Check,CN=System,DC=tripppled,DC=local
+
+# File Replication Service, System, tripppled.local
+dn: CN=File Replication Service,CN=System,DC=tripppled,DC=local
+
+# Dfs-Configuration, System, tripppled.local
+dn: CN=Dfs-Configuration,CN=System,DC=tripppled,DC=local
+
+# IP Security, System, tripppled.local
+dn: CN=IP Security,CN=System,DC=tripppled,DC=local
+
+# AdminSDHolder, System, tripppled.local
+dn: CN=AdminSDHolder,CN=System,DC=tripppled,DC=local
+
+# ComPartitions, System, tripppled.local
+dn: CN=ComPartitions,CN=System,DC=tripppled,DC=local
+
+# ComPartitionSets, System, tripppled.local
+dn: CN=ComPartitionSets,CN=System,DC=tripppled,DC=local
+
+# WMIPolicy, System, tripppled.local
+dn: CN=WMIPolicy,CN=System,DC=tripppled,DC=local
+
+# DomainUpdates, System, tripppled.local
+dn: CN=DomainUpdates,CN=System,DC=tripppled,DC=local
+
+# Password Settings Container, System, tripppled.local
+dn: CN=Password Settings Container,CN=System,DC=tripppled,DC=local
+
+# PSPs, System, tripppled.local
+dn: CN=PSPs,CN=System,DC=tripppled,DC=local
+
+# Administrator, Users, tripppled.local
+dn: CN=Administrator,CN=Users,DC=tripppled,DC=local
+
+# Guest, Users, tripppled.local
+dn: CN=Guest,CN=Users,DC=tripppled,DC=local
+
+# DefaultAccount, Users, tripppled.local
+dn: CN=DefaultAccount,CN=Users,DC=tripppled,DC=local
+
+# Server, System, tripppled.local
+dn: CN=Server,CN=System,DC=tripppled,DC=local
+
+# krbtgt, Users, tripppled.local
+dn: CN=krbtgt,CN=Users,DC=tripppled,DC=local
+
+# Domain Computers, Users, tripppled.local
+dn: CN=Domain Computers,CN=Users,DC=tripppled,DC=local
+
+# Domain Controllers, Users, tripppled.local
+dn: CN=Domain Controllers,CN=Users,DC=tripppled,DC=local
+
+# Schema Admins, Users, tripppled.local
+dn: CN=Schema Admins,CN=Users,DC=tripppled,DC=local
+
+# Enterprise Admins, Users, tripppled.local
+dn: CN=Enterprise Admins,CN=Users,DC=tripppled,DC=local
+
+# Cert Publishers, Users, tripppled.local
+dn: CN=Cert Publishers,CN=Users,DC=tripppled,DC=local
+
+# Domain Admins, Users, tripppled.local
+dn: CN=Domain Admins,CN=Users,DC=tripppled,DC=local
+
+# Domain Users, Users, tripppled.local
+dn: CN=Domain Users,CN=Users,DC=tripppled,DC=local
+
+# Domain Guests, Users, tripppled.local
+dn: CN=Domain Guests,CN=Users,DC=tripppled,DC=local
+
+# Group Policy Creator Owners, Users, tripppled.local
+dn: CN=Group Policy Creator Owners,CN=Users,DC=tripppled,DC=local
+
+# RAS and IAS Servers, Users, tripppled.local
+dn: CN=RAS and IAS Servers,CN=Users,DC=tripppled,DC=local
+
+# Allowed RODC Password Replication Group, Users, tripppled.local
+dn: CN=Allowed RODC Password Replication Group,CN=Users,DC=tripppled,DC=local
+
+# Denied RODC Password Replication Group, Users, tripppled.local
+dn: CN=Denied RODC Password Replication Group,CN=Users,DC=tripppled,DC=local
+
+# Read-only Domain Controllers, Users, tripppled.local
+dn: CN=Read-only Domain Controllers,CN=Users,DC=tripppled,DC=local
+
+# Enterprise Read-only Domain Controllers, Users, tripppled.local
+dn: CN=Enterprise Read-only Domain Controllers,CN=Users,DC=tripppled,DC=local
+
+# Cloneable Domain Controllers, Users, tripppled.local
+dn: CN=Cloneable Domain Controllers,CN=Users,DC=tripppled,DC=local
+
+# Protected Users, Users, tripppled.local
+dn: CN=Protected Users,CN=Users,DC=tripppled,DC=local
+
+# Key Admins, Users, tripppled.local
+dn: CN=Key Admins,CN=Users,DC=tripppled,DC=local
+
+# Enterprise Key Admins, Users, tripppled.local
+dn: CN=Enterprise Key Admins,CN=Users,DC=tripppled,DC=local
+
+# RID Manager$, System, tripppled.local
+dn: CN=RID Manager$,CN=System,DC=tripppled,DC=local
+
+# DnsAdmins, Users, tripppled.local
+dn: CN=DnsAdmins,CN=Users,DC=tripppled,DC=local
+
+# DnsUpdateProxy, Users, tripppled.local
+dn: CN=DnsUpdateProxy,CN=Users,DC=tripppled,DC=local
+
+# MicrosoftDNS, System, tripppled.local
+dn: CN=MicrosoftDNS,CN=System,DC=tripppled,DC=local
+
+# @, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=@,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripppled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=@,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripppl
+ ed,DC=local
+instanceType: 4
+whenCreated: 20201120204456.0Z
+whenChanged: 20201120204456.0Z
+uSNCreated: 12500
+uSNChanged: 12500
+showInAdvancedViewOnly: TRUE
+name: @
+objectGUID:: OJVda9oe4kOS7g7rOWNs8A==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBbAxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBawxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBagxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBaQxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBYQxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBaAxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBZwxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBZgxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBZQxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBZAxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBYwxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBYgxyb290LXNlcnZlcnMDbmV0AA==
+dnsRecord:: FgACAAUIAAAAAAAAAAAAAAAAAAAAAAAAFAMBbQxyb290LXNlcnZlcnMDbmV0AA==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dc: @
+
+# m.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=m.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=m.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204456.0Z
+whenChanged: 20201120204456.0Z
+uSNCreated: 12501
+uSNChanged: 12502
+showInAdvancedViewOnly: TRUE
+name: m.root-servers.net
+objectGUID:: fRximhiemkW/0YgL4df3jg==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAENwwAAAAAAAAAAAAAANQ==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: m.root-servers.net
+
+# b.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=b.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=b.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204456.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12503
+uSNChanged: 12504
+showInAdvancedViewOnly: TRUE
+name: b.root-servers.net
+objectGUID:: 1mgpsXSynUKjoTwl2doggw==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAAIAAAAAAAAAAAAACw==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: b.root-servers.net
+
+# c.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=c.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=c.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12505
+uSNChanged: 12506
+showInAdvancedViewOnly: TRUE
+name: c.root-servers.net
+objectGUID:: a14QfVNhn0CMa+OzKwuitA==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAAACAAAAAAAAAAAADA==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: c.root-servers.net
+
+# d.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=d.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=d.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12507
+uSNChanged: 12508
+showInAdvancedViewOnly: TRUE
+name: d.root-servers.net
+objectGUID:: gnBmtADyEkenRNgvLVdBTQ==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAAAtAAAAAAAAAAAADQ==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: d.root-servers.net
+
+# e.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=e.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=e.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12509
+uSNChanged: 12510
+showInAdvancedViewOnly: TRUE
+name: e.root-servers.net
+objectGUID:: 32uWQX62Mkua1M46Qc46Wg==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAACoAAAAAAAAAAAADg==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: e.root-servers.net
+
+# f.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=f.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=f.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12511
+uSNChanged: 12512
+showInAdvancedViewOnly: TRUE
+name: f.root-servers.net
+objectGUID:: AFvjr9QwhkS3PMsQn1w7mQ==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAAAvAAAAAAAAAAAADw==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: f.root-servers.net
+
+# g.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=g.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=g.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12513
+uSNChanged: 12514
+showInAdvancedViewOnly: TRUE
+name: g.root-servers.net
+objectGUID:: trldCzdUwU2caTrTTIk9HA==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAAASAAAAAAAAAAANDQ==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: g.root-servers.net
+
+# h.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=h.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=h.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12515
+uSNChanged: 12516
+showInAdvancedViewOnly: TRUE
+name: h.root-servers.net
+objectGUID:: UpD38eR9+UmxlXWNjgWQag==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAAABAAAAAAAAAAAAUw==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: h.root-servers.net
+
+# a.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=a.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=a.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12517
+uSNChanged: 12518
+showInAdvancedViewOnly: TRUE
+name: a.root-servers.net
+objectGUID:: nfbEipmwzEarhLhtV65G5Q==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFA7o+AAAAAAAAAAIAMA==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: a.root-servers.net
+
+# i.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=i.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=i.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12519
+uSNChanged: 12520
+showInAdvancedViewOnly: TRUE
+name: i.root-servers.net
+objectGUID:: EiAOckZkiUK85qJxNDRb1A==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEH/gAAAAAAAAAAAAAAUw==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: i.root-servers.net
+
+# j.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=j.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=j.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12521
+uSNChanged: 12522
+showInAdvancedViewOnly: TRUE
+name: j.root-servers.net
+objectGUID:: wajXGDJL+kmUwgHcab0xAA==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAwwnAAAAAAAAAAIAMA==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: j.root-servers.net
+
+# k.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=k.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=k.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12523
+uSNChanged: 12524
+showInAdvancedViewOnly: TRUE
+name: k.root-servers.net
+objectGUID:: FjrKS6eB/kaXlb9VZotXKg==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEH/QAAAAAAAAAAAAAAAQ==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: k.root-servers.net
+
+# l.root-servers.net, RootDNSServers, MicrosoftDNS, System, tripppled.local
+dn: DC=l.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=tripp
+ pled,DC=local
+objectClass: top
+objectClass: dnsNode
+distinguishedName: DC=l.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=
+ System,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201120204457.0Z
+whenChanged: 20201120204457.0Z
+uSNCreated: 12525
+uSNChanged: 12526
+showInAdvancedViewOnly: TRUE
+name: l.root-servers.net
+objectGUID:: SVW4/xZspE+dTX+fI7Ggzg==
+dnsRecord:: EAAcAAUIAAAAAAAAAAAAAAAAAAAAAAAAIAEFAACfAAAAAAAAAAAAQg==
+objectCategory: CN=Dns-Node,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 16010101000000.0Z
+dNSTombstoned: FALSE
+dc: l.root-servers.net
+
+# DFSR-GlobalSettings, System, tripppled.local
+dn: CN=DFSR-GlobalSettings,CN=System,DC=tripppled,DC=local
+
+# Jesse Mach, Humans, tripppled.local
+dn: CN=Jesse Mach,OU=Humans,DC=tripppled,DC=local
+
+# Michael Knight, Humans, tripppled.local
+dn: CN=Michael Knight,OU=Humans,DC=tripppled,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Michael Knight
+sn: Knight
+givenName: Michael
+distinguishedName: CN=Michael Knight,OU=Humans,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201121051214.0Z
+whenChanged: 20201121051214.0Z
+displayName: Michael Knight
+uSNCreated: 12839
+uSNChanged: 12844
+name: Michael Knight
+objectGUID:: cr+iVU04fUu2rp/eYFClRg==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132610647169608132
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132504091349338835
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAVX6WEtuJct9isgGYUQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: MichaelKnight
+sAMAccountType: 805306368
+userPrincipalName: MichaelKnight@tripppled.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 20201124190147.0Z
+dSCorePropagationData: 20201124190131.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Stringfellow Hawke, Humans, tripppled.local
+dn: CN=Stringfellow Hawke,OU=Humans,DC=tripppled,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Stringfellow Hawke
+sn: Hawke
+givenName: Stringfellow
+distinguishedName: CN=Stringfellow Hawke,OU=Humans,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201121051637.0Z
+whenChanged: 20201121051637.0Z
+displayName: Stringfellow Hawke
+uSNCreated: 12846
+uSNChanged: 12851
+name: Stringfellow Hawke
+objectGUID:: TiCb3nhPvUSMszG7uYna/Q==
+userAccountControl: 66048
+badPwdCount: 736
+codePage: 0
+countryCode: 0
+badPasswordTime: 132862411831948008
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132504093979600290
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAVX6WEtuJct9isgGYUgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: stringfellowHawke
+sAMAccountType: 805306368
+userPrincipalName: stringfellowHawke@tripppled.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 20201124190147.0Z
+dSCorePropagationData: 20201124190131.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# bell222, Robots, tripppled.local
+dn: CN=bell222,OU=Robots,DC=tripppled,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: bell222
+givenName: bell222
+distinguishedName: CN=bell222,OU=Robots,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201122174153.0Z
+whenChanged: 20201122174153.0Z
+displayName: bell222
+uSNCreated: 13005
+uSNChanged: 13012
+name: bell222
+objectGUID:: YL+rmxsPD0eaaBWUjoqoCA==
+userAccountControl: 66048
+badPwdCount: 46185
+codePage: 0
+countryCode: 0
+badPasswordTime: 132862507523824037
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132505405131294909
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAVX6WEtuJct9isgGYUwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: bell222
+sAMAccountType: 805306368
+userPrincipalName: bell222@tripppled.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 20201124190048.0Z
+dSCorePropagationData: 20201123001326.0Z
+dSCorePropagationData: 20201122174153.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# 82FBTA, Robots, tripppled.local
+dn: CN=82FBTA,OU=Robots,DC=tripppled,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: 82FBTA
+givenName: 2000
+distinguishedName: CN=82FBTA,OU=Robots,DC=tripppled,DC=local
+instanceType: 4
+whenCreated: 20201122174428.0Z
+whenChanged: 20201122175120.0Z
+displayName: 2000
+uSNCreated: 13014
+uSNChanged: 13032
+name: 82FBTA
+objectGUID:: R16yahI99ESKTwu2H2T6SQ==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132567089157362415
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132505406681026337
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAVX6WEtuJct9isgGYVAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: 82FBTA
+sAMAccountType: 805306368
+userPrincipalName: 82FBTA@tripppled.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+dSCorePropagationData: 20201124190048.0Z
+dSCorePropagationData: 20201123001326.0Z
+dSCorePropagationData: 20201122174428.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# xr500, Robots, tripppled.local
+dn: CN=xr500,OU=Robots,DC=tripppled,DC=local
+
+# BCKUPKEY_f63d62ce-ce02-41e2-bb25-d470415417ab Secret, System, tripppled.local
+dn: CN=BCKUPKEY_f63d62ce-ce02-41e2-bb25-d470415417ab Secret,CN=System,DC=tripp
+ pled,DC=local
+
+# BCKUPKEY_P Secret, System, tripppled.local
+dn: CN=BCKUPKEY_P Secret,CN=System,DC=tripppled,DC=local
+
+# BCKUPKEY_39db54e5-57d0-4703-abeb-a4f5ba5631a5 Secret, System, tripppled.local
+dn: CN=BCKUPKEY_39db54e5-57d0-4703-abeb-a4f5ba5631a5 Secret,CN=System,DC=tripp
+ pled,DC=local
+
+# BCKUPKEY_PREFERRED Secret, System, tripppled.local
+dn: CN=BCKUPKEY_PREFERRED Secret,CN=System,DC=tripppled,DC=local
+
+# search reference
+ref: ldap://ForestDnsZones.tripppled.local/DC=ForestDnsZones,DC=tripppled,DC=l
+ ocal
+
+# search reference
+ref: ldap://DomainDnsZones.tripppled.local/DC=DomainDnsZones,DC=tripppled,DC=l
+ ocal
+
+# search reference
+ref: ldap://tripppled.local/CN=Configuration,DC=tripppled,DC=local
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 74
+# numEntries: 70
+# numReferences: 3

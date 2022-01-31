@@ -1,0 +1,195 @@
+# Nmap 7.92 scan initiated Fri Jan 21 16:34:06 2022 as: nmap -vv --reason -Pn -T4 -sV -p 389 "--script=banner,(ldap* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp389/tcp_389_ldap_nmap.txt -oX /home/beed2112/hackclub/results/results/trippple.hc/scans/tcp389/xml/tcp_389_ldap_nmap.xml trippple.hc
+Nmap scan report for trippple.hc (192.168.3.20)
+Host is up, received user-set (0.057s latency).
+Scanned at 2022-01-21 16:34:07 MST for 16s
+
+PORT    STATE SERVICE REASON          VERSION
+389/tcp open  ldap    syn-ack ttl 127 Microsoft Windows Active Directory LDAP (Domain: tripppled.local, Site: Default-First-Site-Name)
+| ldap-rootdse: 
+| LDAP Results
+|   <ROOT>
+|       currentTime: 20220121233157.0Z
+|       subschemaSubentry: CN=Aggregate,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|       dsServiceName: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|       namingContexts: DC=tripppled,DC=local
+|       namingContexts: CN=Configuration,DC=tripppled,DC=local
+|       namingContexts: CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|       namingContexts: DC=DomainDnsZones,DC=tripppled,DC=local
+|       namingContexts: DC=ForestDnsZones,DC=tripppled,DC=local
+|       defaultNamingContext: DC=tripppled,DC=local
+|       schemaNamingContext: CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|       configurationNamingContext: CN=Configuration,DC=tripppled,DC=local
+|       rootDomainNamingContext: DC=tripppled,DC=local
+|       supportedControl: 1.2.840.113556.1.4.319
+|       supportedControl: 1.2.840.113556.1.4.801
+|       supportedControl: 1.2.840.113556.1.4.473
+|       supportedControl: 1.2.840.113556.1.4.528
+|       supportedControl: 1.2.840.113556.1.4.417
+|       supportedControl: 1.2.840.113556.1.4.619
+|       supportedControl: 1.2.840.113556.1.4.841
+|       supportedControl: 1.2.840.113556.1.4.529
+|       supportedControl: 1.2.840.113556.1.4.805
+|       supportedControl: 1.2.840.113556.1.4.521
+|       supportedControl: 1.2.840.113556.1.4.970
+|       supportedControl: 1.2.840.113556.1.4.1338
+|       supportedControl: 1.2.840.113556.1.4.474
+|       supportedControl: 1.2.840.113556.1.4.1339
+|       supportedControl: 1.2.840.113556.1.4.1340
+|       supportedControl: 1.2.840.113556.1.4.1413
+|       supportedControl: 2.16.840.1.113730.3.4.9
+|       supportedControl: 2.16.840.1.113730.3.4.10
+|       supportedControl: 1.2.840.113556.1.4.1504
+|       supportedControl: 1.2.840.113556.1.4.1852
+|       supportedControl: 1.2.840.113556.1.4.802
+|       supportedControl: 1.2.840.113556.1.4.1907
+|       supportedControl: 1.2.840.113556.1.4.1948
+|       supportedControl: 1.2.840.113556.1.4.1974
+|       supportedControl: 1.2.840.113556.1.4.1341
+|       supportedControl: 1.2.840.113556.1.4.2026
+|       supportedControl: 1.2.840.113556.1.4.2064
+|       supportedControl: 1.2.840.113556.1.4.2065
+|       supportedControl: 1.2.840.113556.1.4.2066
+|       supportedControl: 1.2.840.113556.1.4.2090
+|       supportedControl: 1.2.840.113556.1.4.2205
+|       supportedControl: 1.2.840.113556.1.4.2204
+|       supportedControl: 1.2.840.113556.1.4.2206
+|       supportedControl: 1.2.840.113556.1.4.2211
+|       supportedControl: 1.2.840.113556.1.4.2239
+|       supportedControl: 1.2.840.113556.1.4.2255
+|       supportedControl: 1.2.840.113556.1.4.2256
+|       supportedControl: 1.2.840.113556.1.4.2309
+|       supportedLDAPVersion: 3
+|       supportedLDAPVersion: 2
+|       supportedLDAPPolicies: MaxPoolThreads
+|       supportedLDAPPolicies: MaxPercentDirSyncRequests
+|       supportedLDAPPolicies: MaxDatagramRecv
+|       supportedLDAPPolicies: MaxReceiveBuffer
+|       supportedLDAPPolicies: InitRecvTimeout
+|       supportedLDAPPolicies: MaxConnections
+|       supportedLDAPPolicies: MaxConnIdleTime
+|       supportedLDAPPolicies: MaxPageSize
+|       supportedLDAPPolicies: MaxBatchReturnMessages
+|       supportedLDAPPolicies: MaxQueryDuration
+|       supportedLDAPPolicies: MaxDirSyncDuration
+|       supportedLDAPPolicies: MaxTempTableSize
+|       supportedLDAPPolicies: MaxResultSetSize
+|       supportedLDAPPolicies: MinResultSets
+|       supportedLDAPPolicies: MaxResultSetsPerConn
+|       supportedLDAPPolicies: MaxNotificationPerConn
+|       supportedLDAPPolicies: MaxValRange
+|       supportedLDAPPolicies: MaxValRangeTransitive
+|       supportedLDAPPolicies: ThreadMemoryLimit
+|       supportedLDAPPolicies: SystemMemoryLimitPercent
+|       highestCommittedUSN: 749001
+|       supportedSASLMechanisms: GSSAPI
+|       supportedSASLMechanisms: GSS-SPNEGO
+|       supportedSASLMechanisms: EXTERNAL
+|       supportedSASLMechanisms: DIGEST-MD5
+|       dnsHostName: trippple.tripppled.local
+|       ldapServiceName: tripppled.local:trippple$@TRIPPPLED.LOCAL
+|       serverName: CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|       supportedCapabilities: 1.2.840.113556.1.4.800
+|       supportedCapabilities: 1.2.840.113556.1.4.1670
+|       supportedCapabilities: 1.2.840.113556.1.4.1791
+|       supportedCapabilities: 1.2.840.113556.1.4.1935
+|       supportedCapabilities: 1.2.840.113556.1.4.2080
+|       supportedCapabilities: 1.2.840.113556.1.4.2237
+|       isSynchronized: TRUE
+|       isGlobalCatalogReady: TRUE
+|       domainFunctionality: 7
+|       forestFunctionality: 7
+|_      domainControllerFunctionality: 7
+| ldap-search: 
+|   Context: DC=tripppled,DC=local
+|     dn: DC=tripppled,DC=local
+|         objectClass: top
+|         objectClass: domain
+|         objectClass: domainDNS
+|         distinguishedName: DC=tripppled,DC=local
+|         instanceType: 5
+|         whenCreated: 2020/11/20 20:43:11 UTC
+|         whenChanged: 2020/11/24 04:15:40 UTC
+|         subRefs: DC=ForestDnsZones,DC=tripppled,DC=local
+|         subRefs: DC=DomainDnsZones,DC=tripppled,DC=local
+|         subRefs: CN=Configuration,DC=tripppled,DC=local
+|         uSNCreated: 4099
+|         dSASignature: \x01\x00\x00\x00(\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00F\x04\xB9\xBD!MnE\xBD\x1Do\x11\x11\x17c\xE9
+|         uSNChanged: 16483
+|         name: tripppled
+|         objectGUID: 2d643645-df9f-474a-b626-5b37b039f6c
+|         creationTime: 132506615879818921
+|         forceLogoff: -9223372036854775808
+|         lockoutDuration: -18000000000
+|         lockOutObservationWindow: -18000000000
+|         lockoutThreshold: 0
+|         maxPwdAge: -36288000000000
+|         minPwdAge: -864000000000
+|         minPwdLength: 5
+|         modifiedCountAtLastProm: 0
+|         nextRid: 1000
+|         pwdProperties: 0
+|         pwdHistoryLength: 24
+|         objectSid: 1-5-21-311852629-3748825563-2550248034
+|         serverState: 1
+|         uASCompat: 1
+|         modifiedCount: 1
+|         auditingPolicy: \x00\x01
+|         nTMixedDomain: 0
+|         rIDManagerReference: CN=RID Manager$,CN=System,DC=tripppled,DC=local
+|         fSMORoleOwner: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|         systemFlags: -1946157056
+|         wellKnownObjects: B:32:6227F0AF1FC2410D8E3BB10615BB5B0F:CN=NTDS Quotas,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:F4BE92A4C777485E878E9421D53087DB:CN=Microsoft,CN=Program Data,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:09460C08AE1E4A4EA0F64AEE7DAA1E5A:CN=Program Data,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:22B70C67D56E4EFB91E9300FCA3DC1AA:CN=ForeignSecurityPrincipals,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:18E2EA80684F11D2B9AA00C04F79F805:CN=Deleted Objects,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:2FBAC1870ADE11D297C400C04FD8D5CD:CN=Infrastructure,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:AB8153B7768811D1ADED00C04FD8D5CD:CN=LostAndFound,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:AB1D30F3768811D1ADED00C04FD8D5CD:CN=System,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:A361B2FFFFD211D1AA4B00C04FD7D83A:OU=Domain Controllers,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:AA312825768811D1ADED00C04FD8D5CD:CN=Computers,DC=tripppled,DC=local
+|         wellKnownObjects: B:32:A9D1CA15768811D1ADED00C04FD8D5CD:CN=Users,DC=tripppled,DC=local
+|         objectCategory: CN=Domain-DNS,CN=Schema,CN=Configuration,DC=tripppled,DC=local
+|         isCriticalSystemObject: TRUE
+|         gPLink: [LDAP://CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=tripppled,DC=local;0]
+|         dSCorePropagationData: 1601/01/01 00:00:00 UTC
+|         otherWellKnownObjects: B:32:683A24E2E8164BD3AF86AC3C2CF3F981:CN=Keys,DC=tripppled,DC=local
+|         otherWellKnownObjects: B:32:1EB93889E40C45DF9F0C64D23BBB6237:CN=Managed Service Accounts,DC=tripppled,DC=local
+|         masteredBy: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|         ms-DS-MachineAccountQuota: 10
+|         msDS-Behavior-Version: 7
+|         msDS-PerUserTrustQuota: 1
+|         msDS-AllUsersTrustQuota: 1000
+|         msDS-PerUserTrustTombstonesQuota: 10
+|         msDs-masteredBy: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|         msDS-IsDomainFor: CN=NTDS Settings,CN=TRIPPPLE,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=tripppled,DC=local
+|         msDS-NcType: 0
+|         msDS-ExpirePasswordsOnSmartCardOnlyAccounts: TRUE
+|         dc: tripppled
+|     dn: CN=WinsockServices,CN=System,DC=tripppled,DC=local
+|     dn: CN=RpcServices,CN=System,DC=tripppled,DC=local
+|     dn: CN=FileLinks,CN=System,DC=tripppled,DC=local
+|     dn: CN=Default Domain Policy,CN=System,DC=tripppled,DC=local
+|     dn: CN=Meetings,CN=System,DC=tripppled,DC=local
+|     dn: CN=Policies,CN=System,DC=tripppled,DC=local
+|     dn: CN=RAS and IAS Servers Access Check,CN=System,DC=tripppled,DC=local
+|     dn: CN=File Replication Service,CN=System,DC=tripppled,DC=local
+|     dn: CN=Dfs-Configuration,CN=System,DC=tripppled,DC=local
+|     dn: CN=IP Security,CN=System,DC=tripppled,DC=local
+|     dn: CN=AdminSDHolder,CN=System,DC=tripppled,DC=local
+|     dn: CN=ComPartitions,CN=System,DC=tripppled,DC=local
+|     dn: CN=ComPartitionSets,CN=System,DC=tripppled,DC=local
+|     dn: CN=WMIPolicy,CN=System,DC=tripppled,DC=local
+|     dn: CN=DomainUpdates,CN=System,DC=tripppled,DC=local
+|     dn: CN=Password Settings Container,CN=System,DC=tripppled,DC=local
+|     dn: CN=PSPs,CN=System,DC=tripppled,DC=local
+|     dn: CN=Administrator,CN=Users,DC=tripppled,DC=local
+|     dn: CN=Guest,CN=Users,DC=tripppled,DC=local
+| 
+| 
+|_Result limited to 20 objects (see ldap.maxobjects)
+Service Info: Host: TRIPPPLE; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 21 16:34:23 2022 -- 1 IP address (1 host up) scanned in 17.30 seconds
